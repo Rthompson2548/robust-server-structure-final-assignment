@@ -20,9 +20,7 @@ function useExists(req, res, next) {
 
 // function for making a get request to list all uses data
 function list(req, res) {
-    const filteredUses = uses.filter((use) => {
-        !req.params.useId || use.urlId === Number(req.params.urlId)
-    })
+  res.status(200).json({data: uses})
 }
 
 

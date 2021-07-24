@@ -102,18 +102,6 @@ function addUse(req, res) {
      })
  }
 
-// delete?
-//   delete()
-//  function destroy(req, res) {
-//     const { urlId } = req.params
-//     const index = urls.findIndex((url) => url.id === Number(urlId))
-
-//     const deletedUrls = urls.splice(index, 1)
-//     deletedUrls.forEach((deletedUrl) => {
-//    })
-//    res.sendStatus(204)
-// }
-
 
 module.exports = {
     create: [hasHref, create],
@@ -122,5 +110,3 @@ module.exports = {
     update: [urlExists, update],
     urlExists,
   }
-
-
